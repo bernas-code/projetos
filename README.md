@@ -1,0 +1,1 @@
+## projetos para desenvolvimento pessoal, irei falar mais deles sobre aqui e oque achei de fazer cada um.
