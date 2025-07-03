@@ -1,6 +1,7 @@
 import hashlib
 import time
 from itertools import product
+#a
 
 def crack_hash(target_hash, charset, max_length):
     inicio = time.perf_counter()  # Captura o tempo inicial
