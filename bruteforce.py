@@ -1,3 +1,4 @@
+## brute force por hash
 import itertools
 from multiprocessing import Pool, cpu_count
 import hashlib 

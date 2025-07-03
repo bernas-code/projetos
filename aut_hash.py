@@ -1,3 +1,4 @@
+## tentativa de autenticar uma hash
 import hashlib
 import getpass
 

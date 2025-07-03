@@ -1,7 +1,7 @@
 import socket
 import time
 from concurrent.futures import ProcessPoolExecutor #usar processos
-#from concurrent.futures import ThreadPoolExecutor #usar threads
+#from concurrent.futures import ThreadPoolExecutor #usar threads melhoria de vlocidade e memoria
 
 def verificar_porta(ip,porta,resultados):
     try:
@@ -18,7 +18,7 @@ def verificar_porta(ip,porta,resultados):
 def ajuda_scan(ip,portas):
     with ProcessPoolExecutor(max_workers=2) as executor:
         executor.map(lambda p: verificar_porta(ip, p ), portas)
-    #with ThreadsPoolExecutor(max.worker=100) as executor:
+    #tentativa de maior rapidez with ThreadsPoolExecutor(max.worker=100) as executor:
     #   executor.map(lambda p: verificar_porta(ip, p), portas)
 
 def main():

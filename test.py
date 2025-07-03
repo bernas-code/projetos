@@ -4,14 +4,14 @@ from itertools import product
 #a
 
 def crack_hash(target_hash, charset, max_length):
-    inicio = time.perf_counter()  # Captura o tempo inicial
+    inicio = time.perf_counter() 
     for length in range(1, max_length + 1):
         for attempt in product(charset, repeat=length):
             attempt = ''.join(attempt)
             hashed_attempt = hashlib.md5(attempt.encode()).hexdigest()
             if hashed_attempt == target_hash:
-                fim = time.perf_counter()  # Captura o tempo final
-                tempo_decorrido = fim - inicio  # Calcula o tempo decorrido
+                fim = time.perf_counter() 
+                tempo_decorrido = fim - inicio 
                 print(f"Tempo decorrido: {tempo_decorrido:.4f} segundos")
                 return attempt
     fim = time.perf_counter()
